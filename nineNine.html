@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nine_box">
+        <h2>Multiplication Table</h2>
+
+        <script>
+            // 生成99
+            var nineNine = "<table>";
+            for (var i = 1; i <= 9; i++) {
+                nineNine += "<tr>";
+                for (var j = 1; j <= i; j++) {
+                    nineNine += "<td>" + j + "×" + i + "=" + i * j + "</td>";
+                }
+                nineNine += "</tr>";
+            }
+            nineNine += "</table>";
+            document.write(nineNine);
+        </script>
+    </div>
+</body>
+
+</html>
