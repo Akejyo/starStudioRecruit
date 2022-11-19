@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="mock.js"></script>
+</head>
+
+<body>
+    <div id="body_box" class="body_box" style="opacity: 0;height: 80vh;width: 70vh;">
+        <div class="jump_button">
+            <span onclick=SendXMLHttpRequest()>
+                Send resquest
+            </span>
+        </div>
+
+        <div class="mock_div" style="color: #fff;">
+            <p class="result" id="result" style="height: 20vh;word-break: break-all;overflow-y: scroll;"></p>
+            <pre id="jsonresult" class="pre"></pre>
+        </div>
+        <div class="user_box">
+            <input type="text" id="id" required placeholder=" " pattern=".*">
+            <label class="name_login_label">Input the id</label>
+        </div>
+        <div class="jump_button">
+            <span onclick=ShowInfo()>
+                ShowInfo
+            </span>
+        </div>
+
+        <div class="detail" id="detail">
+            <img id="detailImg">
+            <div id="detailName" style="color: #fff;font-size: large;"></div>
+            <div id="detailInfo" style="color: #fff;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
